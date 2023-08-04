@@ -3,15 +3,20 @@
     <head>
         <title>Etch-A-Sketch</title>
         <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>Etch-A-Sketch</h1>
-        <p>Select what size grid you would like for your Etch-A-Sketch then click the GO button and hover the mouse over the squares</p>
+        <p>Select what size grid you would like for your Etch-A-Sketch then click the GO button and hover the mouse over the squares.</p>
         <h2>Choose Your Grid Size:</h2>
-        <input type="text" placeholder="Enter number here">
-        <button type="submit">GO</button>
-        <div class="grid"></div>
+        <div class="input-div">
+            <input type="text" placeholder="Enter number here">
+            <button type="submit">GO</button>
+        </div>
+        <div class="grid-container">
+            <div class="grid"></div>
+        </div>
 
         <script src="scripts.js"></script>
     </body>
