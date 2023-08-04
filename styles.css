@@ -58,6 +58,7 @@ button {
     border-radius: 4px;
     font-weight: 600;
     font-size: 20px;
+    margin: 12px;
 }
 
 input, input::placeholder {
@@ -65,4 +66,13 @@ input, input::placeholder {
     background-color: #B10DC9;
     color: black;
     font-weight: 600;
+}
+
+input:focus {
+    border-color: #F012BE;
+}
+
+button:hover {
+    background-color: #F012BE;
+    border-color: #F012BE;
 }
