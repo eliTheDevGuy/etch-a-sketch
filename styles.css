@@ -50,6 +50,8 @@ p {
     width: 720px;
     height: 720px;
     border: 8px #B10DC9 solid;
+    display: flex;
+    flex: 1;
 }
 
 button {
