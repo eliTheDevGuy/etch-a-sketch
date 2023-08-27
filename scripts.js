@@ -4,20 +4,26 @@ const goBtn = document.querySelector('.go-btn');
 const resetBtn = document.querySelector('.reset-btn');
 
 goBtn.addEventListener('click', createGrid);
+resetBtn.addEventListener('click', resetGrid);
 
 function createGrid() {
     const gridNumber = +userInput.value;
     userInput.value = '';
-    for (let i = 1; i < gridNumber; i++) {
+    for (let x = 0; x < gridNumber; x++) {
         const newDiv = document.createElement('div');
-        for (let i = 1; i < gridNumber; i++) {
+        newDiv.className = 'newDiv';
+        for (let y = 0; y < gridNumber; y++) {
             const square = document.createElement('div');
-            square.style.backgroundColor = '#F012BE';
+            square.className = 'square';
             square.addEventListener('mouseover', (e) => {
                 square.style.backgroundColor = 'black';
             })
-            newDiv.append(square);
+            newDiv.appendChild(square);
         }
-        grid.append(newDiv);
+        grid.appendChild(newDiv);
     }
+}
+
+function resetGrid() {
+    grid.innerHTML = '';
 }

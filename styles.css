@@ -51,7 +51,6 @@ p {
     height: 720px;
     border: 8px #B10DC9 solid;
     display: flex;
-    flex: 1;
 }
 
 button {
@@ -77,4 +76,17 @@ input:focus {
 button:hover {
     background-color: #F012BE;
     border-color: #F012BE;
+}
+
+div.square {
+    background-color: #F012BE;
+    border: 1px black solid;
+    display: flex;
+    flex: 1;
+}
+
+div.newDiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
