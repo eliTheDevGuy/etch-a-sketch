@@ -8,6 +8,11 @@ resetBtn.addEventListener('click', resetGrid);
 
 function createGrid() {
     const gridNumber = +userInput.value;
+    if (gridNumber > 200) {
+        userInput.value = '';
+        alert('Number too high');
+        return false;
+    }
     userInput.value = '';
     for (let x = 0; x < gridNumber; x++) {
         const newDiv = document.createElement('div');
